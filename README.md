@@ -1,8 +1,10 @@
-## Developed on Android Studio
-* Android Studio 4.2.1
-* Build #AI-202.7660.26.42.7351085, built on May 10, 2021
-* Runtime version: 11.0.8+10-b944.6916264 x86_64
-* VM: OpenJDK 64-Bit Server VM
+## Giphy Search 
+An Android app that utilizes the [Giphy search API](https://developers.giphy.com/docs/api/endpoint#search) to search for Gifs. 
+
+![gif-search](https://user-images.githubusercontent.com/831071/120631202-e7871f80-c467-11eb-9bcf-1bde37bb99e7.gif)
+
+## API Key 
+Please [request](https://support.giphy.com/hc/en-us/articles/360020283431-Request-A-GIPHY-API-Key) an API key from Giphy and add it to [ApiKeyInterceptor.kt](https://github.com/vshivam/gif-search/blob/b1c5dfe29a08d118adef09755affd4e844471fde/app/src/main/java/com/search/giphy/base/networking/interceptor/ApiKeyInterceptor.kt#L23) 
 
 ## Tech Stack
 * Kotlin + coroutines + flow
@@ -15,7 +17,7 @@
 * Junit5, Mockito for testing
 
 ## Architecture
-Follows the MVVM architecture with a data -> domain <- presentation setup.
+Follows the MVVM architecture with a data -> domain <- presentation setup within a feature.
 
 ```
 GiphySearch/
